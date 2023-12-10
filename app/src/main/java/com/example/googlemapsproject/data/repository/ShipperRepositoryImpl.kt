@@ -1,12 +1,14 @@
 package com.example.googlemapsproject.data.repository
 
-import com.example.googlemapsproject.data.local.ShipperDao
+import com.example.googlemapsproject.data.local.database.ShipperDao
 import com.example.googlemapsproject.domain.models.Shipper
 import com.example.googlemapsproject.domain.models.ShipperWithConsignee
 import com.example.googlemapsproject.domain.repository.ShipperRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class ShipperRepositoryImpl @Inject constructor(
     private val shipperDao: ShipperDao
 ) : ShipperRepository {

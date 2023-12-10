@@ -14,27 +14,27 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/ic_close"
-        app:layout_constraintBottom_toTopOf="@id/titleCard"
+        app:layout_constraintBottom_toTopOf="@id/AddressCard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/titleCard"
+        android:id="@+id/AddressCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="5dp"
         app:cardElevation="5dp"
-        app:layout_constraintBottom_toTopOf="@id/descCard"
+        app:layout_constraintBottom_toTopOf="@id/volumeCard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgClose">
 
         <EditText
-            android:id="@+id/edtTitle"
+            android:id="@+id/edtAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
@@ -48,7 +48,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/descCard"
+        android:id="@+id/volumeCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -59,11 +59,11 @@
         app:layout_constraintBottom_toTopOf="@+id/btnSave"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleCard"
+        app:layout_constraintTop_toBottomOf="@id/AddressCard"
         tools:layout_editor_absoluteX="8dp">
 
         <EditText
-            android:id="@+id/edtDesc"
+            android:id="@+id/edtVolume"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
@@ -86,8 +86,8 @@
         android:textColor="@color/white"
         app:backgroundTint="#4CAF50"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/descCard"
-        app:layout_constraintTop_toBottomOf="@id/descCard"
+        app:layout_constraintEnd_toEndOf="@+id/volumeCard"
+        app:layout_constraintTop_toBottomOf="@id/volumeCard"
         app:tint="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.googlemapsproject
+package com.example.googlemapsproject.data.remote.dto.routes
 
 import com.google.gson.annotations.SerializedName
 

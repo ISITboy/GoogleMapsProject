@@ -6,5 +6,5 @@ import javax.inject.Inject
 class GetAllShippersUseCase @Inject constructor(
     private val shipperRepository: ShipperRepository
 ) {
-    suspend operator fun invoke() = shipperRepository.getAllShippers()
+    operator fun invoke() = shipperRepository.getAllShippers()
 }

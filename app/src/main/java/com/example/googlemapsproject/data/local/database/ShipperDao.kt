@@ -1,4 +1,4 @@
-package com.example.googlemapsproject.data.local
+package com.example.googlemapsproject.data.local.database
 
 import androidx.room.Dao
 import androidx.room.Delete

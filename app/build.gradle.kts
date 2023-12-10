@@ -44,6 +44,7 @@ android {
 dependencies {
 
     implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation ("com.google.maps:google-maps-services:0.15.0")
 
     val lifecycle_version = "2.6.2"
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
@@ -58,7 +59,10 @@ dependencies {
 
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation ("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    implementation ("androidx.compose.runtime:runtime-livedata:1.4.0-alpha04")
 
     //Dagger Hilt
     val hilt_version = "2.48"
